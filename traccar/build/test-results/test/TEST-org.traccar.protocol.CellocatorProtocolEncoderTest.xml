@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.traccar.protocol.CellocatorProtocolEncoderTest" tests="1" skipped="1" failures="0" errors="0" timestamp="2020-10-01T18:55:23" hostname="7erry" time="0.0">
+  <properties/>
+  <testcase name="testEncode" classname="org.traccar.protocol.CellocatorProtocolEncoderTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

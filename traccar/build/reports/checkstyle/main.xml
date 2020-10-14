@@ -1,0 +1,1551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.26">
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/BaseDataHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/BaseFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/BaseHttpProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/BasePipelineFactory.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/BaseProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/BaseProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/BaseProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/CharacterDelimiterFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/Context.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/DeviceSession.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/EventLoopGroupFactory.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/ExtendedObjectDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/GlobalTimer.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/Main.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/MainEventHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/MainModule.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/NetworkMessage.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/PipelineBuilder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/ServerManager.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/StringProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/TrackerServer.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/WebDataHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/WindowsService.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/WrapperContext.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/WrapperInboundHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/WrapperOutboundHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/AsyncSocket.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/AsyncSocketServlet.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/BaseObjectResource.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/BaseResource.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/CorsResponseFilter.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/DateParameterConverterProvider.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/ExtendedObjectResource.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/HealthCheckService.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/MediaFilter.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/ObjectMapperProvider.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/ResourceErrorHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/SecurityRequestFilter.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/SimpleObjectResource.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/UserPrincipal.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/UserSecurityContext.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/resource/AttributeResource.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/resource/CalendarResource.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/resource/CommandResource.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/resource/DeviceResource.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/resource/DriverResource.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/resource/EventResource.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/resource/GeofenceResource.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/resource/GroupResource.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/resource/MaintenanceResource.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/resource/NotificationResource.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/resource/PermissionsResource.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/resource/PositionResource.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/resource/ReportResource.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/resource/ServerResource.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/resource/SessionResource.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/resource/StatisticsResource.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/api/resource/UserResource.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/config/Config.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/config/ConfigKey.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/config/ConfigSuffix.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/config/Keys.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/database/ActiveDevice.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/database/AttributesManager.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/database/BaseObjectManager.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/database/CalendarManager.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/database/CommandsManager.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/database/ConnectionManager.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/database/DataManager.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/database/DeviceManager.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/database/DriversManager.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/database/ExtendedObjectManager.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/database/GeofenceManager.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/database/GroupTree.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/database/GroupsManager.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/database/IdentityManager.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/database/LdapProvider.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/database/MailManager.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/database/MaintenancesManager.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/database/ManagableObjects.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/database/MediaManager.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/database/NotificationManager.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/database/PermissionsManager.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/database/QueryBuilder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/database/QueryExtended.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/database/QueryIgnore.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/database/SimpleObjectManager.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/database/StatisticsManager.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/database/UsersManager.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geocoder/Address.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geocoder/AddressFormat.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geocoder/BanGeocoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geocoder/BingMapsGeocoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geocoder/FactualGeocoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geocoder/GeocodeFarmGeocoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geocoder/GeocodeXyzGeocoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geocoder/Geocoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geocoder/GeocoderException.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geocoder/GisgraphyGeocoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geocoder/GoogleGeocoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geocoder/HereGeocoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geocoder/JsonGeocoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geocoder/MapQuestGeocoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geocoder/MapmyIndiaGeocoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geocoder/NominatimGeocoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geocoder/OpenCageGeocoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geocoder/PositionStackGeocoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geocoder/TomTomGeocoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geofence/GeofenceCircle.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geofence/GeofenceGeometry.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geofence/GeofencePolygon.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geofence/GeofencePolyline.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geolocation/GeolocationException.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geolocation/GeolocationProvider.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geolocation/GoogleGeolocationProvider.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geolocation/MozillaGeolocationProvider.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geolocation/OpenCellIdGeolocationProvider.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geolocation/UniversalGeolocationProvider.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/geolocation/UnwiredGeolocationProvider.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/handler/ComputedAttributesHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/handler/CopyAttributesHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/handler/DefaultDataHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/handler/DistanceHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/handler/EngineHoursHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/handler/FilterHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/handler/GeocoderHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/handler/GeolocationHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/handler/HemisphereHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/handler/MotionHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/handler/NetworkMessageHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/handler/OpenChannelHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/handler/RemoteAddressHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/handler/SpeedLimitHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/handler/StandardLoggingHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/handler/TimeHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/handler/events/AlertEventHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/handler/events/BaseEventHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/handler/events/CommandResultEventHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/handler/events/DriverEventHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/handler/events/FuelDropEventHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/handler/events/GeofenceEventHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/handler/events/IgnitionEventHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/handler/events/MaintenanceEventHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/handler/events/MotionEventHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/handler/events/OverspeedEventHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/helper/BcdUtil.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/helper/BitBuffer.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/helper/BitUtil.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/helper/BufferUtil.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/helper/Checksum.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/helper/DataConverter.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/helper/DateBuilder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/helper/DateUtil.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/helper/DistanceCalculator.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/helper/Hashing.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/helper/Log.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/helper/LogAction.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/helper/ObdDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/helper/Parser.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/helper/PatternBuilder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/helper/PatternUtil.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/helper/SanitizerModule.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/helper/ServletHelper.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/helper/UnitsConverter.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/model/Attribute.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/model/BaseModel.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/model/Calendar.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/model/CellTower.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/model/Command.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/model/Device.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/model/DeviceAccumulators.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/model/DeviceState.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/model/Driver.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/model/Event.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/model/ExtendedModel.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/model/Geofence.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/model/Group.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/model/GroupedModel.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/model/Maintenance.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/model/ManagedUser.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/model/Message.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/model/MiscFormatter.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/model/Network.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/model/Notification.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/model/Permission.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/model/Position.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/model/ScheduledModel.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/model/Server.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/model/Statistics.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/model/Typed.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/model/User.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/model/WifiAccessPoint.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/notification/EventForwarder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/notification/FullMessage.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/notification/JsonTypeEventForwarder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/notification/MessageException.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/notification/NotificationFormatter.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/notification/NotificatorManager.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/notification/PropertiesProvider.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/notificators/Notificator.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/notificators/NotificatorFirebase.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/notificators/NotificatorMail.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/notificators/NotificatorNull.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/notificators/NotificatorPushover.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/notificators/NotificatorSms.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/notificators/NotificatorTelegram.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/notificators/NotificatorTraccar.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/notificators/NotificatorWeb.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protobuf/OmnicommMessageOuterClass.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protobuf/StarLinkMessage.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AdmProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AdmProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AdmProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AisProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AisProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AlematicsFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AlematicsProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AlematicsProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AnytrekProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AnytrekProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/ApelProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/ApelProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AplicomFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AplicomProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AplicomProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AppelloProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AppelloProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AppletProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AppletProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AquilaProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AquilaProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Ardi01Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Ardi01ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/ArknavProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/ArknavProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/ArknavX8Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/ArknavX8ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/ArnaviBinaryProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/ArnaviFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/ArnaviProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/ArnaviProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/ArnaviTextProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AstraProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AstraProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/At2000FrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/At2000Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/At2000ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AtrackFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AtrackProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AtrackProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AtrackProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AuroProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AuroProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AustinNbProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AustinNbProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AutoFonFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AutoFonProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AutoFonProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AutoGradeProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AutoGradeProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AutoTrackProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AutoTrackProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AvemaProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/AvemaProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Avl301Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Avl301ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/BceFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/BceProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/BceProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/BceProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/BlackKiteProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/BlackKiteProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/BlueProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/BlueProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/BoxProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/BoxProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/C2stekProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/C2stekProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/CalAmpProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/CalAmpProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/CarTrackProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/CarTrackProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/CarcellProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/CarcellProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/CarcellProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/CarscopProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/CarscopProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/CastelProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/CastelProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/CastelProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/CautelaProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/CautelaProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/CellocatorFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/CellocatorProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/CellocatorProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/CellocatorProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/CguardProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/CguardProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/CityeasyProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/CityeasyProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/CityeasyProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/ContinentalProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/ContinentalProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/CradlepointProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/CradlepointProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/DingtekFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/DingtekProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/DingtekProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/DishaProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/DishaProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/DmtHttpProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/DmtHttpProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/DmtProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/DmtProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/DwayProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/DwayProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/EasyTrackProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/EasyTrackProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/EasyTrackProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/EelinkProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/EelinkProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/EelinkProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/EgtsFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/EgtsProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/EgtsProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/EnforaProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/EnforaProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/EnforaProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/EsealProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/EsealProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/EsealProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/EskyFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/EskyProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/EskyProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/ExtremTracProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/ExtremTracProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/FifotrackFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/FifotrackProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/FifotrackProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/FifotrackProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/FlespiProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/FlespiProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/FlexCommProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/FlexCommProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/FlextrackProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/FlextrackProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/FoxProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/FoxProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/FreedomProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/FreedomProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/FreematicsProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/FreematicsProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/FutureWayFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/FutureWayProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/FutureWayProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GalileoFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GalileoProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GalileoProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GalileoProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GatorProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GatorProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GenxProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GenxProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Gl100Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Gl100ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Gl200BinaryProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Gl200FrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Gl200Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Gl200ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Gl200ProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Gl200TextProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GlobalSatProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GlobalSatProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GlobalSatProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GlobalstarProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GlobalstarProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GnxProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GnxProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GoSafeProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GoSafeProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GotopProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GotopProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Gps056FrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Gps056Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Gps056ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Gps103Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Gps103ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Gps103ProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GpsGateProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GpsGateProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GpsMarkerProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GpsMarkerProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GpsmtaProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GpsmtaProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GranitFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GranitProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GranitProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GranitProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/GranitProtocolSmsEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Gt02Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Gt02ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Gt06FrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Gt06Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Gt06ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Gt06ProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Gt30Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Gt30ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/H02FrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/H02Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/H02ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/H02ProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/HaicomProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/HaicomProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/HomtecsProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/HomtecsProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/HuaShengFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/HuaShengProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/HuaShengProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/HuabaoFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/HuabaoProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/HuabaoProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/HuabaoProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/HunterProProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/HunterProProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/IdplProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/IdplProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/IntellitracFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/IntellitracProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/IntellitracProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/ItsFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/ItsProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/ItsProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/ItsProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Ivt401Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Ivt401ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/JpKorjarFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/JpKorjarProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/JpKorjarProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Jt600FrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Jt600Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Jt600ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Jt600ProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/KenjiProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/KenjiProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/KhdProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/KhdProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/KhdProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/L100FrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/L100Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/L100ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/LaipacProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/LaipacProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/LaipacProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/LeafSpyProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/LeafSpyProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/M2cProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/M2cProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/M2mProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/M2mProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/MaestroProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/MaestroProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/ManPowerProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/ManPowerProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/MegastekFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/MegastekProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/MegastekProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/MeiligaoFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/MeiligaoProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/MeiligaoProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/MeiligaoProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/MeitrackFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/MeitrackProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/MeitrackProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/MeitrackProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/MictrackProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/MictrackProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/MilesmateProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/MilesmateProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/MiniFinderProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/MiniFinderProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/MiniFinderProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Minifinder2Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Minifinder2ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/MoovboxProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/MoovboxProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/MotorProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/MotorProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Mta6Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Mta6ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/MtxProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/MtxProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/MxtFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/MxtProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/MxtProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/NavigilFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/NavigilProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/NavigilProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/NavisFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/NavisProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/NavisProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/NavisetFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/NavisetProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/NavisetProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/NeosProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/NeosProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/NiotProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/NiotProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/NoranProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/NoranProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/NoranProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/NvsFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/NvsProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/NvsProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/NyitechProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/NyitechProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/ObdDongleProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/ObdDongleProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/OigoProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/OigoProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/OkoProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/OkoProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/OmnicommFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/OmnicommProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/OmnicommProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/OpenGtsProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/OpenGtsProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/OrionFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/OrionProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/OrionProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/OsmAndProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/OsmAndProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/OutsafeProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/OutsafeProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/OwnTracksProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/OwnTracksProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/PacificTrackProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/PacificTrackProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/PathAwayProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/PathAwayProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/PiligrimProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/PiligrimProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/PluginProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/PluginProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/PortmanProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/PortmanProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/PortmanProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/PretraceProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/PretraceProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/PretraceProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/PricolProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/PricolProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/ProgressProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/ProgressProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/PstFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/PstFrameEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/PstProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/PstProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/PstProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Pt215Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Pt215ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Pt3000Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Pt3000ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Pt502FrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Pt502Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Pt502ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Pt502ProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Pt60Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Pt60ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/RaceDynamicsProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/RaceDynamicsProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/RadarProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/RadarProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/RaveonProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/RaveonProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/RecodaProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/RecodaProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/RetranslatorFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/RetranslatorProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/RetranslatorProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/RitiProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/RitiProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/RoboTrackFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/RoboTrackProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/RoboTrackProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/RstProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/RstProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/RuptelaProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/RuptelaProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/RuptelaProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/S168Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/S168ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SabertekFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SabertekProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SabertekProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SanavProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SanavProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SanulProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SanulProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SatsolProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SatsolProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SigfoxProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SigfoxProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SiwiProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SiwiProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SkypatrolProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SkypatrolProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SmartSoleProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SmartSoleProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SmokeyProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SmokeyProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SolarPoweredProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SolarPoweredProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SpotProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SpotProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/StarLinkProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/StarLinkProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/StarcomProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/StarcomProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Stl060FrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Stl060Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Stl060ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SuntechFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SuntechProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SuntechProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SuntechProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SupermateProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SupermateProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SviasProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SviasProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/SviasProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/T55Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/T55ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/T57FrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/T57Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/T57ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/T800xProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/T800xProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/T800xProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TaipProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TaipProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TechTltProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TechTltProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TekFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TekProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TekProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TelemaxProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TelemaxProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TelicFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TelicProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TelicProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TeltonikaFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TeltonikaProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TeltonikaProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TeltonikaProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/ThinkRaceProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/ThinkRaceProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Tk102Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Tk102ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Tk103FrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Tk103Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Tk103ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Tk103ProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Tlt2hProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Tlt2hProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TlvProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TlvProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TmgFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TmgProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TmgProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TopflytechProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TopflytechProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TopinProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TopinProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TotemFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TotemProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TotemProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TotemProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Tr20Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Tr20ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Tr900Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Tr900ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TrackboxProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TrackboxProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TrakMateProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TrakMateProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TramigoFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TramigoProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TramigoProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TrvProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TrvProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Tt8850Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Tt8850ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TytanProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TytanProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TzoneProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/TzoneProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/UlbotechFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/UlbotechProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/UlbotechProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/UproProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/UproProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/V680Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/V680ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/VisiontekProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/VisiontekProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/VnetProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/VnetProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Vt200FrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Vt200Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Vt200ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/VtfmsFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/VtfmsProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/VtfmsProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/WatchFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/WatchProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/WatchProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/WatchProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/WialonProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/WialonProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/WialonProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/WliFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/WliProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/WliProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/WondexFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/WondexProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/WondexProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/WondexProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/WristbandProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/WristbandProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/XexunFrameDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/XexunProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/XexunProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/XexunProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/XirgoProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/XirgoProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/XirgoProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Xrb28Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Xrb28ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Xrb28ProtocolEncoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Xt013Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Xt013ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Xt2400Protocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/Xt2400ProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/YwtProtocol.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/protocol/YwtProtocolDecoder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/reports/Events.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/reports/ReportUtils.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/reports/Route.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/reports/Stops.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/reports/Summary.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/reports/Trips.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/reports/model/BaseReport.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/reports/model/DeviceReport.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/reports/model/StopReport.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/reports/model/SummaryReport.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/reports/model/TripReport.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/reports/model/TripsConfig.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/schedule/ScheduleManager.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/schedule/TaskDeviceInactivityCheck.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/sms/HttpSmsClient.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/sms/SmsManager.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/sms/smpp/ClientSmppSessionHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/sms/smpp/EnquireLinkTask.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/sms/smpp/ReconnectionTask.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/sms/smpp/SmppClient.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/sms/smpp/TextMessageEventHandler.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/speedlimit/OverpassSpeedLimitProvider.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/speedlimit/SpeedLimitException.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/speedlimit/SpeedLimitProvider.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/web/ConsoleServlet.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/web/CsvBuilder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/web/GpxBuilder.java">
+</file>
+<file name="/Users/twal7ers/Documents/projects/telemetrics/traccar/src/main/java/org/traccar/web/WebServer.java">
+</file>
+</checkstyle>

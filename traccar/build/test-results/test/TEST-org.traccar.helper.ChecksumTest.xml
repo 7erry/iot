@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.traccar.helper.ChecksumTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-10-01T18:55:23" hostname="7erry" time="0.001">
+  <properties/>
+  <testcase name="testCrc16" classname="org.traccar.helper.ChecksumTest" time="0.0"/>
+  <testcase name="testCrc8" classname="org.traccar.helper.ChecksumTest" time="0.0"/>
+  <testcase name="testLuhn" classname="org.traccar.helper.ChecksumTest" time="0.0"/>
+  <testcase name="testNmea" classname="org.traccar.helper.ChecksumTest" time="0.001"/>
+  <testcase name="testModulo256" classname="org.traccar.helper.ChecksumTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.traccar.protocol.SuntechProtocolDecoderTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-10-01T18:55:23" hostname="7erry" time="0.012">
+  <properties/>
+  <testcase name="testDecodeDriver" classname="org.traccar.protocol.SuntechProtocolDecoderTest" time="0.001"/>
+  <testcase name="testDecodeHours" classname="org.traccar.protocol.SuntechProtocolDecoderTest" time="0.0"/>
+  <testcase name="testDecodeRpm" classname="org.traccar.protocol.SuntechProtocolDecoderTest" time="0.001"/>
+  <testcase name="testDecode" classname="org.traccar.protocol.SuntechProtocolDecoderTest" time="0.009"/>
+  <testcase name="testDecodeTemperature" classname="org.traccar.protocol.SuntechProtocolDecoderTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

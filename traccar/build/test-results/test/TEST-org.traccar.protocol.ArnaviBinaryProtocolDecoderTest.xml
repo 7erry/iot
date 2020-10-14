@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.traccar.protocol.ArnaviBinaryProtocolDecoderTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-10-01T18:55:23" hostname="7erry" time="0.001">
+  <properties/>
+  <testcase name="testHeader1Decode" classname="org.traccar.protocol.ArnaviBinaryProtocolDecoderTest" time="0.0"/>
+  <testcase name="testHeader2Decode" classname="org.traccar.protocol.ArnaviBinaryProtocolDecoderTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
