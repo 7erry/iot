@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.traccar.calendar.CalendarTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-01T18:55:22" hostname="7erry" time="0.097">
-  <properties/>
-  <testcase name="testCalendar" classname="org.traccar.calendar.CalendarTest" time="0.097"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Oct 01, 2020 2:55:22 PM net.fortuna.ical4j.util.Configurator <clinit>
-INFO: ical4j.properties not found.
-]]></system-err>
-</testsuite>

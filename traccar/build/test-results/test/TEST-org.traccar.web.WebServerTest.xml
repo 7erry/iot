@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.traccar.web.WebServerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-01T18:55:22" hostname="7erry" time="0.028">
-  <properties/>
-  <testcase name="contextTest" classname="org.traccar.web.WebServerTest" time="0.028"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Oct 01, 2020 2:55:22 PM org.eclipse.jetty.util.log.Log initialized
-INFO: Logging initialized @1439ms to org.eclipse.jetty.util.log.Slf4jLog
-]]></system-err>
-</testsuite>

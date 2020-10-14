@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.traccar.protocol.H02FrameDecoderTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-10-01T18:55:23" hostname="7erry" time="0.002">
-  <properties/>
-  <testcase name="testDecodeLong" classname="org.traccar.protocol.H02FrameDecoderTest" time="0.001"/>
-  <testcase name="testDecodeShort" classname="org.traccar.protocol.H02FrameDecoderTest" time="0.0"/>
-  <testcase name="testDecodeAlternative" classname="org.traccar.protocol.H02FrameDecoderTest" time="0.001"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
