@@ -2,7 +2,7 @@
 
 ## Overview
 
-An open source GPS tracking system. This repository contains Java-based back-end service. It supports more than 170 GPS protocols and more than 1500 models of GPS tracking devices. Traccar can be used with any major SQL database system. 
+An open source GPS tracking system. This repository contains Java-based back-end service. It supports more than 170 GPS protocols and more than 1500 models of GPS tracking devices. Hazelcast IOT can be used with any major SQL database system. 
 
 ## Features
 
