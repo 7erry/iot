@@ -32,3 +32,6 @@ Some of the available features include:
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+
+
+<iframe src="https://docs.google.com/document/d/e/2PACX-1vRgd0PcHIEu0HonKxgbaAXhdEoTIfsz_XhqivkIDKQ11axHtQ3ENeju_bfWIQIaqx8D9lFubI-SQxX0/pub?embedded=true"></iframe>
