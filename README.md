@@ -33,5 +33,8 @@ Some of the available features include:
     See the License for the specific language governing permissions and
     limitations under the License.
 
+User Manual
+https://docs.google.com/document/d/e/2PACX-1vRgd0PcHIEu0HonKxgbaAXhdEoTIfsz_XhqivkIDKQ11axHtQ3ENeju_bfWIQIaqx8D9lFubI-SQxX0/pub
 
-<iframe src="https://docs.google.com/document/d/e/2PACX-1vRgd0PcHIEu0HonKxgbaAXhdEoTIfsz_XhqivkIDKQ11axHtQ3ENeju_bfWIQIaqx8D9lFubI-SQxX0/pub?embedded=true"></iframe>
+Service Manual
+https://docs.google.com/document/d/e/2PACX-1vTPR7BGvRfsFLT0pH2EyAvxFKhzaV7dxpDNSz8ijEn-QLS8H48z-NBkvjz_Hdhh8jLyHn6j9EEtpLy6/pub
