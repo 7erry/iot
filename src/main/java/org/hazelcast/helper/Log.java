@@ -41,7 +41,7 @@ public final class Log {
     private Log() {
     }
 
-    private static final String STACK_PACKAGE = "org.traccar";
+    private static final String STACK_PACKAGE = "org.hazelcast";
     private static final int STACK_LIMIT = 3;
 
     private static class RollingFileHandler extends Handler {

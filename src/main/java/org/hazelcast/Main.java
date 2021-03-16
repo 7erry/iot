@@ -142,7 +142,7 @@ public final class Main {
             injector = Guice.createInjector(new MainModule());
             logSystemInfo();
             LOGGER.info("Version: " + Main.class.getPackage().getImplementationVersion());
-            LOGGER.info("Starting server...");
+            LOGGER.info("Starting Hazelcast IOT Server...");
 
             Context.getServerManager().start();
             if (Context.getWebServer() != null) {

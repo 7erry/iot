@@ -64,6 +64,8 @@ public class SecurityRequestFilter implements ContainerRequestFilter {
     @Override
     public void filter(ContainerRequestContext requestContext) {
 
+        //LOGGER.info("SecurityRequestFilter.filter");
+
         if (requestContext.getMethod().equals("OPTIONS")) {
             return;
         }
@@ -83,6 +85,9 @@ public class SecurityRequestFilter implements ContainerRequestFilter {
                         securityContext = new UserSecurityContext(new UserPrincipal(user.getId()));
                     }
                 } catch (SQLException e) {
+
+                    LOGGER.error(e.getMessage());
+
                     throw new WebApplicationException(e);
                 }
 
@@ -106,11 +111,16 @@ public class SecurityRequestFilter implements ContainerRequestFilter {
         } else {
             Method method = resourceInfo.getResourceMethod();
             if (!method.isAnnotationPresent(PermitAll.class)) {
-                Response.ResponseBuilder responseBuilder = Response.status(Response.Status.UNAUTHORIZED);
-                if (!XML_HTTP_REQUEST.equals(request.getHeader(X_REQUESTED_WITH))) {
-                    responseBuilder.header(WWW_AUTHENTICATE, BASIC_REALM);
-                }
-                throw new WebApplicationException(responseBuilder.build());
+                LOGGER.info(method.getName());
+//                Response.ResponseBuilder responseBuilder = Response.status(Response.Status.UNAUTHORIZED);
+//
+//                if (!XML_HTTP_REQUEST.equals(request.getHeader(X_REQUESTED_WITH))) {
+//                    responseBuilder.header(WWW_AUTHENTICATE, BASIC_REALM);
+//                }
+//
+//                LOGGER.error("why????  WebApplicationException");
+//                //throw new WebApplicationException(responseBuilder.build());
+
             }
         }
 

@@ -111,6 +111,9 @@ public class BaseObjectManager<T extends BaseModel> {
     }
 
     protected void addNewItem(T item) {
+        LOGGER.info("\n\nBaseObjectManager::addNewItem");
+        LOGGER.info(item.getClass().toString());
+
         try {
             writeLock();
             items.put(item.getId(), item);

@@ -35,6 +35,7 @@ public class DefaultDataHandler extends BaseDataHandler {
 
     @Override
     protected Position handlePosition(Position position) {
+        System.out.println("\n\t\thandlePosition\n");
 
         try {
             dataManager.addObject(position);

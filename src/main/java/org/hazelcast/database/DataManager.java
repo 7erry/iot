@@ -493,9 +493,8 @@ public class DataManager {
                 .executeUpdate());
 
         // add object to hazelcast
-        IMap entityMap = hz.getMap(entity.getClass().getName());
-        // add date to id for position in map
         try {
+            IMap entityMap = hz.getMap(entity.getClass().getName());
             if (entity.getClass().getName().contains("Position")) {
                 entityMap.putAsync(entity.getId() + '\t' + ((Position) entity).getDeviceTime().toString(), entity);
             } else {

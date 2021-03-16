@@ -212,6 +212,7 @@ public class DeviceManager extends BaseObjectManager<Device> implements Identity
     }
 
     private void addByUniqueId(Device device) {
+        LOGGER.info("\n\n\taddByUniqueId");
         try {
             writeLock();
             if (devicesByUniqueId == null) {
@@ -262,6 +263,8 @@ public class DeviceManager extends BaseObjectManager<Device> implements Identity
 
     @Override
     protected void addNewItem(Device device) {
+        LOGGER.info("\n\n\tDeviceManager::addNewItem");
+
         super.addNewItem(device);
         addByUniqueId(device);
         if (device.getPhone() != null  && !device.getPhone().isEmpty()) {

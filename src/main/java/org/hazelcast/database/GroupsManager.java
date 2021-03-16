@@ -74,6 +74,7 @@ public class GroupsManager extends BaseObjectManager<Group> implements Managable
 
     @Override
     protected void addNewItem(Group group) {
+        LOGGER.info("\n\n\t\tGroupsManager::addNewItem");
         checkGroupCycles(group);
         super.addNewItem(group);
     }

@@ -19,7 +19,7 @@
 
     <entry key='logger.enable'>true</entry>
     <entry key='logger.level'>info</entry>
-    <entry key='logger.file'>./logs/hazelcast-iot-server.log</entry>
+    <entry key='logger.file'>./logs/hazelcastiot-server.log</entry>
     <entry key='logger.rotate'>true</entry>
 
     <entry key='filter.enable'>true</entry>
@@ -32,7 +32,7 @@
 
     <entry key='media.path'>./media</entry>
 
-    <entry key='notificator.types'>web,slack</entry>
+    <entry key='notificator.types'>web</entry>
 
     <entry key='server.statistics'>https://hazelcast.com/analytics/</entry>
 
