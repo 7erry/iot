@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Anton Tananaev (anton@traccar.org)
+ * Copyright 2020 Anton Tananaev (anton )
  * Copyright 2016 Gabor Somogyi (gabor.g.somogyi@gmail.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");

@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Anton Tananaev (anton@traccar.org)
+ * Copyright 2019 Anton Tananaev (anton )
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,14 +18,14 @@ package org.hazelcast.protocol;
 import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
 import org.hazelcast.BaseProtocol;
 import org.hazelcast.PipelineBuilder;
-import org.hazelcast.TrackerServer;
+import org.hazelcast.HazelcastIoTServer;
 
 import java.nio.ByteOrder;
 
 public class Minifinder2Protocol extends BaseProtocol {
 
     public Minifinder2Protocol() {
-        addServer(new TrackerServer(false, getName()) {
+        addServer(new HazelcastIoTServer(false, getName()) {
             @Override
             protected void addProtocolHandlers(PipelineBuilder pipeline) {
                 pipeline.addLast(new LengthFieldBasedFrameDecoder(ByteOrder.LITTLE_ENDIAN, 1024, 2, 2, 4, 0, true));

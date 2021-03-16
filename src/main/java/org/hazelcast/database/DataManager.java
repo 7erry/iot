@@ -1,5 +1,5 @@
 /*
- * Copyright 2012 - 2017 Anton Tananaev (anton@traccar.org)
+ * Copyright 2012 - 2017 Anton Tananaev (anton )
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,6 +29,11 @@ import java.util.Set;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
+import com.hazelcast.config.ClasspathXmlConfig;
+import com.hazelcast.core.Hazelcast;
+import com.hazelcast.core.HazelcastInstance;
+import com.hazelcast.crdt.pncounter.PNCounter;
+import com.hazelcast.map.IMap;
 import liquibase.Contexts;
 import liquibase.Liquibase;
 import liquibase.database.Database;
@@ -75,6 +80,9 @@ public class DataManager {
 
     private final Config config;
 
+    // Hazelcast Instance
+    private static HazelcastInstance hz;
+
     private DataSource dataSource;
 
     private boolean generateQueries;
@@ -86,8 +94,27 @@ public class DataManager {
 
         forceLdap = config.getBoolean("ldap.force");
 
+        // Hazelcast
+        initHazelcast();
+
+        // Database
         initDatabase();
         initDatabaseSchema();
+    }
+
+    public HazelcastInstance getHazelcastInstance() { return this.hz; }
+
+    private void initHazelcast() {
+        // Start Hazelcast Instance using the hazelcast.xml from resources / classpath
+        com.hazelcast.config.Config cfg = new ClasspathXmlConfig("hazelcast.xml");
+
+        // display our cluster name to verify the configuration file being used
+        System.out.println("\n\n\t\t"+cfg.getClusterName()+"\n\n");
+        // Enterprise License Key
+        cfg.setLicenseKey("ENT#10Nodes#dOfy209WBgUNnZQkiM6l1TEKSYCbJjAPXwu8G5qDmH14000101021390101101100011010008100901109101");
+
+
+        hz = Hazelcast.newHazelcastInstance(cfg);
     }
 
     private void initDatabase() throws Exception {
@@ -435,6 +462,8 @@ public class DataManager {
 
     public void linkObject(Class<?> owner, long ownerId, Class<?> property, long propertyId, boolean link)
             throws SQLException {
+        System.out.println("\tDataManager::linkObject\t\t"+property.getName()+"\t"+propertyId);
+
         QueryBuilder.create(dataSource, getQuery(link ? ACTION_INSERT : ACTION_DELETE, owner, property))
                 .setLong(makeNameId(owner), ownerId)
                 .setLong(makeNameId(property), propertyId)
@@ -442,6 +471,8 @@ public class DataManager {
     }
 
     public <T extends BaseModel> T getObject(Class<T> clazz, long entityId) throws SQLException {
+        System.out.println("\tDataManager::getObject\t\t"+clazz.getName()+"\t"+entityId);
+
         return QueryBuilder.create(dataSource, getQuery(ACTION_SELECT, clazz))
                 .setLong("id", entityId)
                 .executeQuerySingle(clazz);
@@ -452,13 +483,31 @@ public class DataManager {
                 .executeQuery(clazz);
     }
 
+
     public void addObject(BaseModel entity) throws SQLException {
+        System.out.println("\tDataManager::addObject\t\t"+entity.getClass().getName());
+
+        // add object to database
         entity.setId(QueryBuilder.create(dataSource, getQuery(ACTION_INSERT, entity.getClass()), true)
                 .setObject(entity)
                 .executeUpdate());
+
+        // add object to hazelcast
+        IMap entityMap = hz.getMap(entity.getClass().getName());
+        // add date to id for position in map
+        try {
+            if (entity.getClass().getName().contains("Position")) {
+                entityMap.putAsync(entity.getId() + '\t' + ((Position) entity).getDeviceTime().toString(), entity);
+            } else {
+                entityMap.putAsync(entity.getId(), entity);
+            }
+        }catch (Exception e){
+            System.out.println( e.getMessage() );
+        }
     }
 
     public void updateObject(BaseModel entity) throws SQLException {
+        System.out.println("\tDataManager::updateObject\t\t"+entity.getClass().getName());
         QueryBuilder.create(dataSource, getQuery(ACTION_UPDATE, entity.getClass()))
                 .setObject(entity)
                 .executeUpdate();
@@ -470,6 +519,7 @@ public class DataManager {
     }
 
     public void removeObject(Class<? extends BaseModel> clazz, long entityId) throws SQLException {
+        System.out.println("\tDataManager::removeObject\t\t"+clazz.getName()+"\t"+entityId);
         QueryBuilder.create(dataSource, getQuery(ACTION_DELETE, clazz))
                 .setLong("id", entityId)
                 .executeUpdate();

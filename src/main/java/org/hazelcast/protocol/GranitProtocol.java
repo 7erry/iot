@@ -1,6 +1,6 @@
 /*
- * Copyright 2016 - 2019 Anton Tananaev (anton@traccar.org)
- * Copyright 2017 - 2018 Andrey Kunitsyn (andrey@traccar.org)
+ * Copyright 2016 - 2019 Anton Tananaev (anton )
+ * Copyright 2017 - 2018 Andrey Kunitsyn (andrey )
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@ package org.hazelcast.protocol;
 
 import org.hazelcast.BaseProtocol;
 import org.hazelcast.PipelineBuilder;
-import org.hazelcast.TrackerServer;
+import org.hazelcast.HazelcastIoTServer;
 import org.hazelcast.model.Command;
 
 public class GranitProtocol extends BaseProtocol {
@@ -32,7 +32,7 @@ public class GranitProtocol extends BaseProtocol {
         setSupportedTextCommands(
                 Command.TYPE_REBOOT_DEVICE,
                 Command.TYPE_POSITION_PERIODIC);
-        addServer(new TrackerServer(false, getName()) {
+        addServer(new HazelcastIoTServer(false, getName()) {
             @Override
             protected void addProtocolHandlers(PipelineBuilder pipeline) {
                 pipeline.addLast(new GranitFrameDecoder());

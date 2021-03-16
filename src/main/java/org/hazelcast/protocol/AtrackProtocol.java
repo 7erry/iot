@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 - 2019 Anton Tananaev (anton@traccar.org)
+ * Copyright 2015 - 2019 Anton Tananaev (anton )
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@ package org.hazelcast.protocol;
 
 import org.hazelcast.BaseProtocol;
 import org.hazelcast.PipelineBuilder;
-import org.hazelcast.TrackerServer;
+import org.hazelcast.HazelcastIoTServer;
 import org.hazelcast.model.Command;
 
 public class AtrackProtocol extends BaseProtocol {
@@ -25,7 +25,7 @@ public class AtrackProtocol extends BaseProtocol {
     public AtrackProtocol() {
         setSupportedDataCommands(
                 Command.TYPE_CUSTOM);
-        addServer(new TrackerServer(false, getName()) {
+        addServer(new HazelcastIoTServer(false, getName()) {
             @Override
             protected void addProtocolHandlers(PipelineBuilder pipeline) {
                 pipeline.addLast(new AtrackFrameDecoder());
@@ -33,7 +33,7 @@ public class AtrackProtocol extends BaseProtocol {
                 pipeline.addLast(new AtrackProtocolDecoder(AtrackProtocol.this));
             }
         });
-        addServer(new TrackerServer(true, getName()) {
+        addServer(new HazelcastIoTServer(true, getName()) {
             @Override
             protected void addProtocolHandlers(PipelineBuilder pipeline) {
                 pipeline.addLast(new AtrackProtocolEncoder(AtrackProtocol.this));

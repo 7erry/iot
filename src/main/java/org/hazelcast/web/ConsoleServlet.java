@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 - 2016 Anton Tananaev (anton@traccar.org)
+ * Copyright 2015 - 2016 Anton Tananaev (anton )
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -38,7 +38,7 @@ public class ConsoleServlet extends WebServlet {
             field.setAccessible(true);
             org.h2.server.web.WebServer server = (org.h2.server.web.WebServer) field.get(this);
 
-            ConnectionInfo connectionInfo = new ConnectionInfo("Traccar|"
+            ConnectionInfo connectionInfo = new ConnectionInfo("Hz IoT|"
                     + Context.getConfig().getString("database.driver") + "|"
                     + Context.getConfig().getString("database.url") + "|"
                     + Context.getConfig().getString("database.user"));

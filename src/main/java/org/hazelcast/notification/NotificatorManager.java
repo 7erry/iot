@@ -1,6 +1,6 @@
 /*
- * Copyright 2018 - 2020 Anton Tananaev (anton@traccar.org)
- * Copyright 2018 Andrey Kunitsyn (andrey@traccar.org)
+ * Copyright 2018 - 2020 Anton Tananaev (anton )
+ * Copyright 2018 Andrey Kunitsyn (andrey )
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,6 +32,7 @@ import org.hazelcast.notificators.Notificator;
 import org.hazelcast.notificators.NotificatorSms;
 import org.hazelcast.notificators.NotificatorTraccar;
 import org.hazelcast.notificators.NotificatorWeb;
+import org.hazelcast.notificators.NotificatorSlack;
 import org.hazelcast.notificators.NotificatorTelegram;
 import org.hazelcast.notificators.NotificatorPushover;
 
@@ -50,6 +51,9 @@ public final class NotificatorManager {
             switch (type) {
                 case "web":
                     defaultNotificator = NotificatorWeb.class.getCanonicalName();
+                    break;
+                case "slack":
+                    defaultNotificator = NotificatorSlack.class.getCanonicalName();
                     break;
                 case "mail":
                     defaultNotificator = NotificatorMail.class.getCanonicalName();

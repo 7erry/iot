@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 - 2019 Anton Tananaev (anton@traccar.org)
+ * Copyright 2015 - 2019 Anton Tananaev (anton )
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@ package org.hazelcast.protocol;
 import io.netty.handler.codec.string.StringEncoder;
 import org.hazelcast.BaseProtocol;
 import org.hazelcast.PipelineBuilder;
-import org.hazelcast.TrackerServer;
+import org.hazelcast.HazelcastIoTServer;
 import org.hazelcast.model.Command;
 
 public class MeitrackProtocol extends BaseProtocol {
@@ -32,7 +32,7 @@ public class MeitrackProtocol extends BaseProtocol {
                 Command.TYPE_ALARM_DISARM,
                 Command.TYPE_REQUEST_PHOTO,
                 Command.TYPE_SEND_SMS);
-        addServer(new TrackerServer(false, getName()) {
+        addServer(new HazelcastIoTServer(false, getName()) {
             @Override
             protected void addProtocolHandlers(PipelineBuilder pipeline) {
                 pipeline.addLast(new MeitrackFrameDecoder());
@@ -41,7 +41,7 @@ public class MeitrackProtocol extends BaseProtocol {
                 pipeline.addLast(new MeitrackProtocolDecoder(MeitrackProtocol.this));
             }
         });
-        addServer(new TrackerServer(true, getName()) {
+        addServer(new HazelcastIoTServer(true, getName()) {
             @Override
             protected void addProtocolHandlers(PipelineBuilder pipeline) {
                 pipeline.addLast(new StringEncoder());

@@ -1,6 +1,6 @@
 /*
- * Copyright 2018 Anton Tananaev (anton@traccar.org)
- * Copyright 2018 Andrey Kunitsyn (andrey@traccar.org)
+ * Copyright 2018 Anton Tananaev (anton )
+ * Copyright 2018 Andrey Kunitsyn (andrey )
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,6 +22,9 @@ import org.hazelcast.model.Event;
 import org.hazelcast.model.Position;
 import org.hazelcast.notification.MessageException;
 
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
+
 public abstract class Notificator {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(Notificator.class);
@@ -33,12 +36,16 @@ public abstract class Notificator {
                     sendSync(userId, event, position);
                 } catch (MessageException | InterruptedException error) {
                     LOGGER.warn("Event send error", error);
+                } catch (ProtocolException e) {
+                    e.printStackTrace();
+                } catch (MalformedURLException e) {
+                    e.printStackTrace();
                 }
             }
         }).start();
     }
 
     public abstract void sendSync(long userId, Event event, Position position)
-        throws MessageException, InterruptedException;
+            throws MessageException, InterruptedException, ProtocolException, MalformedURLException;
 
 }

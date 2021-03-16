@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Anton Tananaev (anton@traccar.org)
+ * Copyright 2019 Anton Tananaev (anton )
  * Copyright 2020 Roeland Boeters (roeland@geodelta.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");

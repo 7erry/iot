@@ -1,5 +1,5 @@
 /*
- * Copyright 2016 - 2018 Anton Tananaev (anton@traccar.org)
+ * Copyright 2016 - 2018 Anton Tananaev (anton )
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,12 +20,12 @@ import io.netty.handler.codec.string.StringEncoder;
 import org.hazelcast.BaseProtocol;
 import org.hazelcast.CharacterDelimiterFrameDecoder;
 import org.hazelcast.PipelineBuilder;
-import org.hazelcast.TrackerServer;
+import org.hazelcast.HazelcastIoTServer;
 
 public class HunterProProtocol extends BaseProtocol {
 
     public HunterProProtocol() {
-        addServer(new TrackerServer(false, getName()) {
+        addServer(new HazelcastIoTServer(false, getName()) {
             @Override
             protected void addProtocolHandlers(PipelineBuilder pipeline) {
                 pipeline.addLast(new CharacterDelimiterFrameDecoder(1024, "\r"));

@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Anton Tananaev (anton@traccar.org)
+ * Copyright 2019 Anton Tananaev (anton )
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,13 +17,13 @@ package org.hazelcast.handler;
 
 import io.netty.channel.ChannelDuplexHandler;
 import io.netty.channel.ChannelHandlerContext;
-import org.hazelcast.TrackerServer;
+import org.hazelcast.HazelcastIoTServer;
 
 public class OpenChannelHandler extends ChannelDuplexHandler {
 
-    private final TrackerServer server;
+    private final HazelcastIoTServer server;
 
-    public OpenChannelHandler(TrackerServer server) {
+    public OpenChannelHandler(HazelcastIoTServer server) {
         this.server = server;
     }
 

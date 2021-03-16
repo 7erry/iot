@@ -7,8 +7,9 @@ import httplib
 import time
 import random
 
-id = '123456789012345'
+id = '007'
 server = 'localhost:5055'
+#server = '3.236.111.106:5055'
 period = 1
 step = 0.001
 device_speed = 70
@@ -20,6 +21,8 @@ waypoints = [
     (28.989455, -95.388554),
     (28.988321, -95.385934),
     (28.991775, -95.383936),
+    (28.993368, -95.387590),
+    (28.993409, -95.387669),
     (28.994002, -95.389014)
 ]
 points = []
@@ -36,16 +39,16 @@ for i in range(0, len(waypoints)):
 
 def send(conn, lat, lon, course, speed, alarm, ignition, accuracy, rpm, fuel, driverUniqueId):
     params = (('id', id), ('timestamp', int(time.time())), ('lat', lat), ('lon', lon), ('bearing', course), ('speed', speed))
-    if alarm:
-        params = params + (('alarm', 'sos'),)
-    if ignition:
-        params = params + (('ignition', 'true'),)
+    #if alarm:
+    #    params = params + (('alarm', 'sos'),)
+    #if ignition:
+    #    params = params + (('ignition', 'true'),)
     if accuracy:
         params = params + (('accuracy', accuracy),)
-    if rpm:
-        params = params + (('rpm', rpm),)
-    if fuel:
-        params = params + (('fuel', fuel),)
+    #if rpm:
+    #    params = params + (('rpm', rpm),)
+    #if fuel:
+    #    params = params + (('fuel', fuel),)
     if driverUniqueId:
         params = params + (('driverUniqueId', driverUniqueId),)
     conn.request('GET', '?' + urllib.urlencode(params))

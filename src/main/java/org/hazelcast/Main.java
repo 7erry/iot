@@ -1,5 +1,5 @@
 /*
- * Copyright 2012 - 2020 Anton Tananaev (anton@traccar.org)
+ * Copyright 2012 - 2020 Anton Tananaev (anton )
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -138,8 +138,6 @@ public final class Main {
 
     public static void run(String configFile) {
         try {
-            Config cfg = new Config();
-            HazelcastInstance hz = Hazelcast.newHazelcastInstance(cfg);
             Context.init(configFile);
             injector = Guice.createInjector(new MainModule());
             logSystemInfo();
@@ -165,9 +163,8 @@ public final class Main {
                     Context.getWebServer().stop();
                 }
                 Context.getServerManager().stop();
+                Context.getDataManager().getHazelcastInstance().shutdown();
 
-                // stop hazelcast
-                hz.shutdown();
             }));
         } catch (Exception e) {
             LOGGER.error("Main method error", e);

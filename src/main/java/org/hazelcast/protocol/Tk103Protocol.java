@@ -1,6 +1,6 @@
 /*
  * Copyright 2017 Christoph Krey (c@ckrey.de)
- * Copyright 2015 - 2019 Anton Tananaev (anton@traccar.org)
+ * Copyright 2015 - 2019 Anton Tananaev (anton )
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@ import io.netty.handler.codec.string.StringDecoder;
 import io.netty.handler.codec.string.StringEncoder;
 import org.hazelcast.BaseProtocol;
 import org.hazelcast.PipelineBuilder;
-import org.hazelcast.TrackerServer;
+import org.hazelcast.HazelcastIoTServer;
 import org.hazelcast.model.Command;
 
 public class Tk103Protocol extends BaseProtocol {
@@ -45,7 +45,7 @@ public class Tk103Protocol extends BaseProtocol {
                 Command.TYPE_ENGINE_STOP,
                 Command.TYPE_ENGINE_RESUME,
                 Command.TYPE_OUTPUT_CONTROL);
-        addServer(new TrackerServer(false, getName()) {
+        addServer(new HazelcastIoTServer(false, getName()) {
             @Override
             protected void addProtocolHandlers(PipelineBuilder pipeline) {
                 pipeline.addLast(new Tk103FrameDecoder());
@@ -55,7 +55,7 @@ public class Tk103Protocol extends BaseProtocol {
                 pipeline.addLast(new Tk103ProtocolDecoder(Tk103Protocol.this));
             }
         });
-        addServer(new TrackerServer(true, getName()) {
+        addServer(new HazelcastIoTServer(true, getName()) {
             @Override
             protected void addProtocolHandlers(PipelineBuilder pipeline) {
                 pipeline.addLast(new StringDecoder());

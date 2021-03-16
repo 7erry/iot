@@ -4,23 +4,22 @@
 
 <properties>
 
-    <!--
-
-    DO NOT MODIFY THIS FILE. Use traccar.xml instead.
-
-    -->
 
     <entry key='web.enable'>true</entry>
     <entry key='web.port'>80</entry>
     <entry key='web.path'>./web</entry>
     <entry key='web.cacheControl'>max-age=3600,public</entry>
 
-    <entry key='geocoder.enable'>false</entry>
+    <entry key='geocoder.enable'>true</entry>
     <entry key='geocoder.type'>google</entry>
+    <entry key='geocoder.key'>AIzaSyBURemnYlJCRzZy1YyhE5PlraEr_D1bk90</entry>
+    <entry key='geocoder.onRequest'>true</entry>
+    <entry key='geocoder.ignorePositions'>true</entry>
+    <entry key='geocoder.reuseDistance'>10</entry>
 
     <entry key='logger.enable'>true</entry>
     <entry key='logger.level'>info</entry>
-    <entry key='logger.file'>./logs/tracker-server.log</entry>
+    <entry key='logger.file'>./logs/hazelcast-iot-server.log</entry>
     <entry key='logger.rotate'>true</entry>
 
     <entry key='filter.enable'>true</entry>
@@ -33,9 +32,9 @@
 
     <entry key='media.path'>./media</entry>
 
-    <entry key='notificator.types'>web,mail</entry>
+    <entry key='notificator.types'>web,slack</entry>
 
-    <entry key='server.statistics'>https://www.traccar.org/analytics/</entry>
+    <entry key='server.statistics'>https://hazelcast.com/analytics/</entry>
 
     <entry key='commands.queueing'>true</entry>
 

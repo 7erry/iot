@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Anton Tananaev (anton@traccar.org)
+ * Copyright 2019 Anton Tananaev (anton )
  * Copyright 2019 Jesse Hills (jesserockz@gmail.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,12 +21,12 @@ import io.netty.handler.codec.http.HttpRequestDecoder;
 import io.netty.handler.codec.http.HttpResponseEncoder;
 import org.hazelcast.BaseProtocol;
 import org.hazelcast.PipelineBuilder;
-import org.hazelcast.TrackerServer;
+import org.hazelcast.HazelcastIoTServer;
 
 public class LeafSpyProtocol extends BaseProtocol {
 
     public LeafSpyProtocol() {
-        addServer(new TrackerServer(false, getName()) {
+        addServer(new HazelcastIoTServer(false, getName()) {
             @Override
             protected void addProtocolHandlers(PipelineBuilder pipeline) {
                 pipeline.addLast(new HttpResponseEncoder());

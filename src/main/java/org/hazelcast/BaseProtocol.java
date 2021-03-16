@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 - 2020 Anton Tananaev (anton@traccar.org)
+ * Copyright 2015 - 2020 Anton Tananaev (anton )
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -35,7 +35,7 @@ public abstract class BaseProtocol implements Protocol {
     private final String name;
     private final Set<String> supportedDataCommands = new HashSet<>();
     private final Set<String> supportedTextCommands = new HashSet<>();
-    private final List<TrackerServer> serverList = new LinkedList<>();
+    private final List<HazelcastIoTServer> serverList = new LinkedList<>();
 
     private StringProtocolEncoder textCommandEncoder = null;
 
@@ -53,12 +53,12 @@ public abstract class BaseProtocol implements Protocol {
         return name;
     }
 
-    protected void addServer(TrackerServer server) {
+    protected void addServer(HazelcastIoTServer server) {
         serverList.add(server);
     }
 
     @Override
-    public Collection<TrackerServer> getServerList() {
+    public Collection<HazelcastIoTServer> getServerList() {
         return serverList;
     }
 

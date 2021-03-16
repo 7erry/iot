@@ -1,5 +1,5 @@
 /*
- * Copyright 2012 - 2019 Anton Tananaev (anton@traccar.org)
+ * Copyright 2012 - 2019 Anton Tananaev (anton )
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -57,12 +57,12 @@ public abstract class BasePipelineFactory extends ChannelInitializer<Channel> {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(BasePipelineFactory.class);
 
-    private final TrackerServer server;
+    private final HazelcastIoTServer server;
     private final String protocol;
     private boolean eventsEnabled;
     private int timeout;
 
-    public BasePipelineFactory(TrackerServer server, String protocol) {
+    public BasePipelineFactory(HazelcastIoTServer server, String protocol) {
         this.server = server;
         this.protocol = protocol;
         eventsEnabled = Context.getConfig().getBoolean(Keys.EVENT_ENABLE);

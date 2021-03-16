@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 - 2019 Anton Tananaev (anton@traccar.org)
+ * Copyright 2015 - 2019 Anton Tananaev (anton )
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@ package org.hazelcast.protocol;
 import org.hazelcast.BaseProtocol;
 import org.hazelcast.Context;
 import org.hazelcast.PipelineBuilder;
-import org.hazelcast.TrackerServer;
+import org.hazelcast.HazelcastIoTServer;
 import org.hazelcast.model.Command;
 
 import io.netty.handler.codec.LineBasedFrameDecoder;
@@ -34,7 +34,7 @@ public class WialonProtocol extends BaseProtocol {
                 Command.TYPE_SEND_USSD,
                 Command.TYPE_IDENTIFICATION,
                 Command.TYPE_OUTPUT_CONTROL);
-        addServer(new TrackerServer(false, getName()) {
+        addServer(new HazelcastIoTServer(false, getName()) {
             @Override
             protected void addProtocolHandlers(PipelineBuilder pipeline) {
                 pipeline.addLast(new LineBasedFrameDecoder(4 * 1024));
@@ -50,7 +50,7 @@ public class WialonProtocol extends BaseProtocol {
                 pipeline.addLast(new WialonProtocolDecoder(WialonProtocol.this));
             }
         });
-        addServer(new TrackerServer(true, getName()) {
+        addServer(new HazelcastIoTServer(true, getName()) {
             @Override
             protected void addProtocolHandlers(PipelineBuilder pipeline) {
                 pipeline.addLast(new LineBasedFrameDecoder(4 * 1024));

@@ -12,8 +12,8 @@ import java.util.Properties;
 
 public class NotificiationMailTest {
 
-    private static final String FROM = "notification@traccar.org";
-    private static final String TO = "anton@traccar.org";
+    private static final String FROM = "notification ";
+    private static final String TO = "anton ";
 
     private static final String BODY = "Test email body.";
     private static final String SUBJECT = "Test";

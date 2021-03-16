@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 - 2020 Anton Tananaev (anton@traccar.org)
+ * Copyright 2015 - 2020 Anton Tananaev (anton )
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,7 +17,7 @@ package org.hazelcast.protocol;
 
 import org.hazelcast.BaseProtocol;
 import org.hazelcast.PipelineBuilder;
-import org.hazelcast.TrackerServer;
+import org.hazelcast.HazelcastIoTServer;
 import org.hazelcast.model.Command;
 
 import io.netty.handler.codec.string.StringEncoder;
@@ -40,7 +40,7 @@ public class WondexProtocol extends BaseProtocol {
                 Command.TYPE_POSITION_SINGLE,
                 Command.TYPE_GET_VERSION,
                 Command.TYPE_IDENTIFICATION);
-        addServer(new TrackerServer(false, getName()) {
+        addServer(new HazelcastIoTServer(false, getName()) {
             @Override
             protected void addProtocolHandlers(PipelineBuilder pipeline) {
                 pipeline.addLast(new WondexFrameDecoder());
@@ -49,7 +49,7 @@ public class WondexProtocol extends BaseProtocol {
                 pipeline.addLast(new WondexProtocolDecoder(WondexProtocol.this));
             }
         });
-        addServer(new TrackerServer(true, getName()) {
+        addServer(new HazelcastIoTServer(true, getName()) {
             @Override
             protected void addProtocolHandlers(PipelineBuilder pipeline) {
                 pipeline.addLast(new StringEncoder());

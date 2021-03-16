@@ -1,5 +1,5 @@
 /*
- * Copyright 2012 - 2018 Anton Tananaev (anton@traccar.org)
+ * Copyright 2012 - 2018 Anton Tananaev (anton )
  * Copyright 2012 Luis Parada (luis.parada@gmail.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");

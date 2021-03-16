@@ -1,5 +1,5 @@
 /*
- * Copyright 2016 Anton Tananaev (anton@traccar.org)
+ * Copyright 2016 Anton Tananaev (anton )
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,9 +15,10 @@
  */
 package org.hazelcast.geofence;
 
+import java.io.Serializable;
 import java.text.ParseException;
 
-public abstract class GeofenceGeometry {
+public abstract class GeofenceGeometry implements Serializable {
 
     public abstract boolean containsPoint(double latitude, double longitude);
 

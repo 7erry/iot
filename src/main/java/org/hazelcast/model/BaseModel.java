@@ -1,6 +1,6 @@
 /*
- * Copyright 2017 Anton Tananaev (anton@traccar.org)
- * Copyright 2017 Andrey Kunitsyn (andrey@traccar.org)
+ * Copyright 2017 Anton Tananaev (anton )
+ * Copyright 2017 Andrey Kunitsyn (andrey )
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,10 @@
  */
 package org.hazelcast.model;
 
-public class BaseModel {
+import java.io.Serializable;
+
+/** TODO: move away from serializable **/
+public class BaseModel implements Serializable {
 
     private long id;
 

@@ -1,7 +1,7 @@
 /*
- * Copyright 2015 - 2019 Anton Tananaev (anton@traccar.org)
+ * Copyright 2015 - 2019 Anton Tananaev (anton )
  * Copyright 2016 Gabor Somogyi (gabor.g.somogyi@gmail.com)
- * Copyright 2017 Andrey Kunitsyn (andrey@traccar.org)
+ * Copyright 2017 Andrey Kunitsyn (andrey )
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.

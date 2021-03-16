@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 - 2019 Anton Tananaev (anton@traccar.org)
+ * Copyright 2015 - 2019 Anton Tananaev (anton )
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@ package org.hazelcast.protocol;
 import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
 import org.hazelcast.BaseProtocol;
 import org.hazelcast.PipelineBuilder;
-import org.hazelcast.TrackerServer;
+import org.hazelcast.HazelcastIoTServer;
 import org.hazelcast.model.Command;
 
 public class EelinkProtocol extends BaseProtocol {
@@ -30,7 +30,7 @@ public class EelinkProtocol extends BaseProtocol {
                 Command.TYPE_ENGINE_STOP,
                 Command.TYPE_ENGINE_RESUME,
                 Command.TYPE_REBOOT_DEVICE);
-        addServer(new TrackerServer(false, getName()) {
+        addServer(new HazelcastIoTServer(false, getName()) {
             @Override
             protected void addProtocolHandlers(PipelineBuilder pipeline) {
                 pipeline.addLast(new LengthFieldBasedFrameDecoder(1024, 3, 2));
@@ -38,7 +38,7 @@ public class EelinkProtocol extends BaseProtocol {
                 pipeline.addLast(new EelinkProtocolDecoder(EelinkProtocol.this));
             }
         });
-        addServer(new TrackerServer(true, getName()) {
+        addServer(new HazelcastIoTServer(true, getName()) {
             @Override
             protected void addProtocolHandlers(PipelineBuilder pipeline) {
                 pipeline.addLast(new EelinkProtocolEncoder(EelinkProtocol.this, true));

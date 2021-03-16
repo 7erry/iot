@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 - 2020 Anton Tananaev (anton@traccar.org)
+ * Copyright 2015 - 2020 Anton Tananaev (anton )
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -133,7 +133,7 @@ public class WebDataHandler extends BaseDataHandler {
     }
 
     public String formatRequest(Position position) throws UnsupportedEncodingException, JsonProcessingException {
-
+System.out.println("formatRequest");
         Device device = identityManager.getById(position.getDeviceId());
 
         String request = url
@@ -191,7 +191,7 @@ public class WebDataHandler extends BaseDataHandler {
         private MediaType mediaType = MediaType.APPLICATION_JSON_TYPE;
 
         AsyncRequestAndCallback(Position position) {
-
+System.out.println("AsyncRequestAndCallback");
             String formattedUrl;
             try {
                 formattedUrl = json && !urlVariables ? url : formatRequest(position);
@@ -284,7 +284,7 @@ public class WebDataHandler extends BaseDataHandler {
 
     @Override
     protected Position handlePosition(Position position) {
-
+System.out.println("handlePosition");
         AsyncRequestAndCallback request = new AsyncRequestAndCallback(position);
         request.send();
 
@@ -293,6 +293,7 @@ public class WebDataHandler extends BaseDataHandler {
 
     private Map<String, Object> prepareJsonPayload(Position position) {
 
+System.out.println("prepareJsonPayload");
         Map<String, Object> data = new HashMap<>();
         Device device = identityManager.getById(position.getDeviceId());
 

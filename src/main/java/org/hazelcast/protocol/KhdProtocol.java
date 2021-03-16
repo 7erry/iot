@@ -1,5 +1,5 @@
 /*
- * Copyright 2015 - 2019 Anton Tananaev (anton@traccar.org)
+ * Copyright 2015 - 2019 Anton Tananaev (anton )
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@ package org.hazelcast.protocol;
 import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
 import org.hazelcast.BaseProtocol;
 import org.hazelcast.PipelineBuilder;
-import org.hazelcast.TrackerServer;
+import org.hazelcast.HazelcastIoTServer;
 import org.hazelcast.model.Command;
 
 public class KhdProtocol extends BaseProtocol {
@@ -27,7 +27,7 @@ public class KhdProtocol extends BaseProtocol {
         setSupportedDataCommands(
                 Command.TYPE_ENGINE_STOP,
                 Command.TYPE_ENGINE_RESUME);
-        addServer(new TrackerServer(false, getName()) {
+        addServer(new HazelcastIoTServer(false, getName()) {
             @Override
             protected void addProtocolHandlers(PipelineBuilder pipeline) {
                 pipeline.addLast(new LengthFieldBasedFrameDecoder(512, 3, 2));

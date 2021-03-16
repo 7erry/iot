@@ -7,6 +7,9 @@ plugins {
 
 repositories {
     mavenCentral()
+    maven {
+        url "https://repository.hazelcast.com/release"
+    }
 }
 
 ext {
@@ -35,7 +38,7 @@ protobuf {
 }
 
 dependencies {
-    implementation "com.hazelcast:hazelcast-all:4.1-BETA-1"
+    implementation "com.hazelcast:hazelcast-enterprise-all:4.1"
     implementation "commons-codec:commons-codec:1.14"
     implementation "com.h2database:h2:1.4.200"
     implementation "mysql:mysql-connector-java:8.0.20"

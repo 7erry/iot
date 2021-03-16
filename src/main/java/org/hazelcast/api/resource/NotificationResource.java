@@ -1,5 +1,5 @@
 /*
- * Copyright 2016 - 2018 Anton Tananaev (anton@traccar.org)
+ * Copyright 2016 - 2018 Anton Tananaev (anton )
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,6 +15,8 @@
  */
 package org.hazelcast.api.resource;
 
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
 import java.util.Collection;
 
 import javax.ws.rs.Consumes;
@@ -59,8 +61,14 @@ public class NotificationResource extends ExtendedObjectResource<Notification> {
     @Path("test")
     public Response testMessage() throws MessageException, InterruptedException {
         for (Typed method : Context.getNotificatorManager().getAllNotificatorTypes()) {
-            Context.getNotificatorManager()
-                    .getNotificator(method.getType()).sendSync(getUserId(), new Event("test", 0), null);
+            try {
+                Context.getNotificatorManager()
+                        .getNotificator(method.getType()).sendSync(getUserId(), new Event("test", 0), null);
+            } catch (ProtocolException e) {
+                e.printStackTrace();
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            }
         }
         return Response.noContent().build();
     }
@@ -69,7 +77,13 @@ public class NotificationResource extends ExtendedObjectResource<Notification> {
     @Path("test/{notificator}")
     public Response testMessage(@PathParam("notificator") String notificator)
             throws MessageException, InterruptedException {
-        Context.getNotificatorManager().getNotificator(notificator).sendSync(getUserId(), new Event("test", 0), null);
+        try {
+            Context.getNotificatorManager().getNotificator(notificator).sendSync(getUserId(), new Event("test", 0), null);
+        } catch (ProtocolException e) {
+            e.printStackTrace();
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
         return Response.noContent().build();
     }
 

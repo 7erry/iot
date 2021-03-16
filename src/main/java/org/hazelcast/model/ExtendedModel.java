@@ -1,5 +1,5 @@
 /*
- * Copyright 2016 - 2017 Anton Tananaev (anton@traccar.org)
+ * Copyright 2016 - 2017 Anton Tananaev (anton )
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,48 +33,59 @@ public class ExtendedModel extends BaseModel {
     public void set(String key, Boolean value) {
         if (value != null) {
             attributes.put(key, value);
+
+            System.out.println("\t\t\t"+this.getClass().getName()+"\tset {boolean} "+key);
         }
     }
 
     public void set(String key, Byte value) {
         if (value != null) {
             attributes.put(key, value.intValue());
+
+            System.out.println("\t\t\t"+this.getClass().getName()+"\tset {Byte} "+key);
         }
     }
 
     public void set(String key, Short value) {
         if (value != null) {
             attributes.put(key, value.intValue());
+            System.out.println("\t\t\t"+this.getClass().getName()+"\tset {short} "+key);
         }
     }
 
     public void set(String key, Integer value) {
         if (value != null) {
             attributes.put(key, value);
+            System.out.println("\t\t\t"+this.getClass().getName()+"\tset {int} "+key);
         }
     }
 
     public void set(String key, Long value) {
         if (value != null) {
             attributes.put(key, value);
+            System.out.println("\t\t\t"+this.getClass().getName()+"\tset {long} "+key);
         }
     }
 
     public void set(String key, Float value) {
         if (value != null) {
             attributes.put(key, value.doubleValue());
+            System.out.println("\t\t\t"+this.getClass().getName()+"\tset {float} "+key);
         }
     }
 
     public void set(String key, Double value) {
         if (value != null) {
             attributes.put(key, value);
+            System.out.println("\t\t\t"+this.getClass().getName()+"\tset {double} "+key);
         }
     }
 
     public void set(String key, String value) {
         if (value != null && !value.isEmpty()) {
             attributes.put(key, value);
+
+            System.out.println("\t\t\t"+this.getClass().getName()+"\tset "+key+" = "+value);
         }
     }
 
