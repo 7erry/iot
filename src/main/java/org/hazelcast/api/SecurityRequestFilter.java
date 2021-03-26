@@ -110,8 +110,8 @@ public class SecurityRequestFilter implements ContainerRequestFilter {
             requestContext.setSecurityContext(securityContext);
         } else {
             Method method = resourceInfo.getResourceMethod();
-            if (!method.isAnnotationPresent(PermitAll.class)) {
-                LOGGER.info(method.getName());
+//            if (!method.isAnnotationPresent(PermitAll.class)) {
+                //LOGGER.info(method.getName());
 //                Response.ResponseBuilder responseBuilder = Response.status(Response.Status.UNAUTHORIZED);
 //
 //                if (!XML_HTTP_REQUEST.equals(request.getHeader(X_REQUESTED_WITH))) {
@@ -121,7 +121,7 @@ public class SecurityRequestFilter implements ContainerRequestFilter {
 //                LOGGER.error("why????  WebApplicationException");
 //                //throw new WebApplicationException(responseBuilder.build());
 
-            }
+//            }
         }
 
     }

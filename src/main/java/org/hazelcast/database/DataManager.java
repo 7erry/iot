@@ -495,11 +495,7 @@ public class DataManager {
         // add object to hazelcast
         try {
             IMap entityMap = hz.getMap(entity.getClass().getName());
-            if (entity.getClass().getName().contains("Position")) {
-                entityMap.putAsync(entity.getId() + '\t' + ((Position) entity).getDeviceTime().toString(), entity);
-            } else {
-                entityMap.putAsync(entity.getId(), entity);
-            }
+            entityMap.putAsync(entity.getId(), entity);
         }catch (Exception e){
             System.out.println( e.getMessage() );
         }

@@ -48,14 +48,14 @@
      <native-memory allocator-type="POOLED" enabled="true">
         <size unit="MEGABYTES" value="10"/>
     </native-memory>
-
+-->
     <map name="*">
-        <in-memory-format>NATIVE</in-memory-format>
+        <!-- in-memory-format>NATIVE</in-memory-format -->
 	    <backup-count>0</backup-count>
 	    <eviction eviction-policy="LRU" max-size-policy="USED_HEAP_SIZE" size="20"/>
         <event-journal enabled="true">
             <time-to-live-seconds>0</time-to-live-seconds>
         </event-journal>
     </map>
--->
+
 </hazelcast>
